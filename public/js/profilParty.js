@@ -5,7 +5,9 @@ profilParty && profilParty.addEventListener('click', async (e) => {
   e.preventDefault();
   const respons = await fetch('/profilParty');
   const resp = await respons.json();
-
+if(resp.arrParty.length === 0) {
+  window.location.assign('/');
+}
   const divPartys = document.createElement('div');
   divPartys.className = 'contanerItems';
   for (let i = 0; i < resp.arrParty.length; i++) {
