@@ -9,7 +9,7 @@ if (addUserParty) {
     let existUser = false;
     for (let i = 0; i < userInDiv.length; i++) {
       const userName=userInDiv[i]
-      if(name === userName.innerText.split(' ')[0] ){
+      if(name === userName.innerText.split(' ')[0]){
         existUser = true;
         const divТotice = document.createElement('h3');
         divТotice.className = 'deleteDiv';
