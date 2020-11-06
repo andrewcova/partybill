@@ -52,12 +52,12 @@ router.get('/', (req, res) => {
 
 router.put('/', async (req, res)=> {
 const result = req.body;
-console.log(result);
+// console.log(result);
 const arrObj = result.map((el) => {
   let arr = el.match(/\S+/gi);
   let nametest = arr[arr.length-1];
   arr.pop();
-  console.log(nametest);
+  // console.log(nametest);
   const name = arr.join(' ');
   let price = nametest.split('-');
   const currency = price[1];
