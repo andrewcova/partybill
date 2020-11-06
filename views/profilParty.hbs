@@ -1,0 +1,16 @@
+<div class="contanerItems">
+
+  <div class="done">
+    <h3>date party: {{date}}</h3>
+    <h1>Учасники</h1>
+    {{ member }}
+    {{!-- <h3>{{this}}</h3>
+    {{/each}} --}}
+    <hr />
+    <br>
+    <h1>Должники</h1>
+    {{#each debtors}}
+    <h3>{{this}}</h3>
+    {{/each}}
+  </div>
+</div>

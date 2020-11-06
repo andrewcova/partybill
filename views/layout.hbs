@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partybill</title>
+  {{!-- <link rel="stylesheet" href="/style/itemForm.css"> --}}
+  <link rel="stylesheet" href="/style/style.css">
+  <script defer src="/js/client.js"></script>
+  <script defer src="/js/profilParty.js"></script>
+</head>
+
+<body>
+
+  <div class="header">
+    <a href="/" class="logo">Party-Bill
+    </a>
+    <div class="header-right">
+      {{#if username}}
+      <a id="profilParty" href="/profilParty" class="logo">{{username}}</a>
+      <a href="/user/logout">Выйти</a>
+      {{else}}
+      <a href="/user/singin">Регистрация</a>
+      <a href="/user/singup">Войти</a>
+      {{/if}}
+      <a href="/newParty">Создать мероприятия</a>
+    </div>
+  </div>
+  <div id="bodydiv"></div>
+  {{{body}}}
+
+  <div class="footer">
+    <a href="/" class="logo">Party-Bill
+    </a>
+    <div class="social">
+      <a href="https://www.facebook.com/andrey.kova.35" class="facebook" target="_blank" rel="nofollow">
+      </a>
+    </div>
+    <div class="social">
+
+      <a href="#" class="vk" target="_blank" rel="nofollow"></a>
+    </div>
+    <div class="social">
+
+      <a href="#" class="instagram" target="_blank" rel="nofollow"> </a>
+    </div>
+    <div class="footer-right">
+      <div>
+        <p>site creators</p>
+      </div>
+      <div class="footer-a">
+        <p>Site created by </p>
+        <a href="#">Andrew</a>
+      </div>
+      <div class="footer-a">
+      <p>Design created</p>
+        <a href="#">Igor</a>
+      </div>
+
+
+    </div>
+
+  </div>
+</body>
+
+</html>
